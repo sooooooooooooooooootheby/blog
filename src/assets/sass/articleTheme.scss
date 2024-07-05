@@ -1,0 +1,155 @@
+.content {
+	div {
+		margin: 64px 0;
+	}
+	blockquote {
+		margin: 1rem;
+		padding: 20px;
+		background-color: #282c34;
+		border-radius: 12px;
+		color: #ffffff;
+
+		p {
+			position: relative;
+            font-size: 1rem;
+		}
+
+		p::before {
+			display: block;
+			content: "";
+			width: 12px;
+			height: 12px;
+			margin-right: 12px;
+			border-radius: 24px;
+			background-color: #eed1a6;
+			position: absolute;
+			top: -12px;
+			left: -12px;
+		}
+
+		a {
+			color: #eed1a6;
+		}
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 12px 0;
+	}
+    h1 {
+        font-size: 2.1rem;
+    }
+    h1::before {
+        content: "H1 ";
+        font-size: 1rem;
+        color: #282c3479;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h2::before {
+        content: "H2 ";
+        font-size: 1rem;
+        color: #282c3479;
+    }
+    h3 {
+        font-size: 1.9rem;
+    }
+    h3::before {
+        content: "H3 ";
+        font-size: 1rem;
+        color: #282c3479;
+    }
+    h4 {
+        font-size: 1.8rem;
+    }
+    h4::before {
+        content: "H4 ";
+        font-size: 1rem;
+        color: #282c3479;
+    }
+    h5 {
+        font-size: 1.6rem;
+    }
+    h5::before {
+        content: "H5 ";
+        font-size: 1rem;
+        color: #282c3479;
+    }
+    h6 {
+        font-size: 1.4rem;
+    }
+    h6::before {
+        content: "H6 ";
+        font-size: 1rem;
+        color: #282c3479;
+    }
+	p {
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+	}
+
+	.hljs {
+		margin: 1rem;
+		padding: 2rem;
+		border-radius: 12px;
+		font-size: 0.9rem;
+		font-family: intelone;
+		position: relative;
+		background-color: #282c34;
+	}
+	.hljs::before {
+		content: "";
+		display: block;
+		content: "";
+		width: 12px;
+		height: 12px;
+		margin-right: 12px;
+		border-radius: 24px;
+		background-color: #eed1a6;
+		position: absolute;
+		top: 12px;
+		left: 12px;
+	}
+	code {
+		margin: 0 4px;
+		padding: 0 4px;
+		font-family: intelone;
+		background-color: #eed1a6;
+		border-radius: 4px;
+	}
+
+	img {
+		width: 100%;
+		margin: 24px 0;
+		border-radius: 12px;
+	}
+
+	table {
+		border-collapse: collapse;
+		width: 100%;
+		border: 1px solid #282c34 !important;
+		margin-bottom: 20px;
+	}
+	table th {
+		border-collapse: collapse;
+		border-right: 1px solid #282c34 !important;
+		border-bottom: 1px solid #282c34 !important;
+		background-color: #eed1a6 !important;
+		padding: 5px 9px;
+		font-size: 1.1rem;
+	}
+	table td {
+		border-collapse: collapse;
+		border-right: 1px solid #282c34 !important;
+		border-bottom: 1px solid #282c34 !important;
+		padding: 5px 9px;
+		font-size: 1rem;
+		font-weight: normal;
+		word-break: break-all;
+	}
+}
