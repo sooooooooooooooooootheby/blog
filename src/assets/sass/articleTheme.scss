@@ -11,7 +11,7 @@
 
 		p {
 			position: relative;
-            font-size: 1rem;
+			font-size: 1rem;
 		}
 
 		p::before {
@@ -38,59 +38,65 @@
 	h4,
 	h5,
 	h6 {
-		margin: 12px 0;
+		margin: 12px;
 	}
-    h1 {
-        font-size: 2.1rem;
-    }
-    h1::before {
-        content: "H1 ";
-        font-size: 1rem;
-        color: #282c3479;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    h2::before {
-        content: "H2 ";
-        font-size: 1rem;
-        color: #282c3479;
-    }
-    h3 {
-        font-size: 1.9rem;
-    }
-    h3::before {
-        content: "H3 ";
-        font-size: 1rem;
-        color: #282c3479;
-    }
-    h4 {
-        font-size: 1.8rem;
-    }
-    h4::before {
-        content: "H4 ";
-        font-size: 1rem;
-        color: #282c3479;
-    }
-    h5 {
-        font-size: 1.6rem;
-    }
-    h5::before {
-        content: "H5 ";
-        font-size: 1rem;
-        color: #282c3479;
-    }
-    h6 {
-        font-size: 1.4rem;
-    }
-    h6::before {
-        content: "H6 ";
-        font-size: 1rem;
-        color: #282c3479;
-    }
+	h1 {
+		font-size: 2.1rem;
+	}
+	h1::before {
+		content: "H1 ";
+		font-size: 1rem;
+		color: #282c3479;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	h2::before {
+		content: "H2 ";
+		font-size: 1rem;
+		color: #282c3479;
+	}
+	h3 {
+		font-size: 1.9rem;
+	}
+	h3::before {
+		content: "H3 ";
+		font-size: 1rem;
+		color: #282c3479;
+	}
+	h4 {
+		font-size: 1.8rem;
+	}
+	h4::before {
+		content: "H4 ";
+		font-size: 1rem;
+		color: #282c3479;
+	}
+	h5 {
+		font-size: 1.6rem;
+	}
+	h5::before {
+		content: "H5 ";
+		font-size: 1rem;
+		color: #282c3479;
+	}
+	h6 {
+		font-size: 1.4rem;
+	}
+	h6::before {
+		content: "H6 ";
+		font-size: 1rem;
+		color: #282c3479;
+	}
 	p {
 		font-size: 1.2rem;
 		line-height: 1.8rem;
+	}
+
+	ul, ol {
+		li {
+			margin-left: 12px;
+		}
 	}
 
 	.hljs {
@@ -151,5 +157,23 @@
 		font-size: 1rem;
 		font-weight: normal;
 		word-break: break-all;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.content {
+		blockquote {
+			margin: 12px 0;
+			border-radius: 0;
+		}
+		p {
+			padding: 12px;
+			font-size: 1rem;
+		}
+
+		.hljs {
+			margin: 1rem 0;
+			border-radius: 0;
+		}
 	}
 }

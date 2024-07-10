@@ -28,6 +28,7 @@
 
 @media screen and (max-width: 450px) {
 	.info {
+		width: calc(100vw - 80px);
 		height: auto;
 		padding: 80px 40px;
 		display: flex;

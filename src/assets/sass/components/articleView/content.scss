@@ -17,3 +17,19 @@
 		font-size: 1.3rem;
 	}
 }
+
+@media screen and (max-width: 450px) {
+	.content {
+		width: 100vw;
+
+		.title {
+			width: calc(100% - 24px);
+			font-size: 2rem;
+			padding: 0 12px;
+		}
+		.subTitle {
+			font-size: 1rem;
+			padding: 0 12px;
+		}
+	}
+}

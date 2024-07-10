@@ -27,3 +27,19 @@
 		}
 	}
 }
+
+@media screen and (max-width: 450px) {
+	.catalogue {
+		width: calc(100vw - 64px);
+		padding: 0 32px;
+		.image {
+			width: 20rem;
+			height: 20rem;
+		}
+		ul {
+			li {
+				width: 20rem;
+			}
+		}
+	}
+}
