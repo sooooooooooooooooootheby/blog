@@ -4,25 +4,40 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	.image {
-		width: 400px;
-		height: 400px;
-		background-image: url("/articleBG.jpg");
-		background-size: cover;
-		background-position: center;
-		border-radius: 24px;
+	.mainTitle {
+		width: 1000px;
+		span {
+			margin: 0 10px;
+			font-size: 3rem;
+			font-family: sourceHan-Medium;
+			font-weight: bold;
+		}
 	}
 	ul {
 		margin-top: 32px;
 		li {
-			width: 400px;
+			width: 1000px;
 			padding: 10px;
 			list-style: none;
 			margin-bottom: 32px;
 
 			a {
+				display: flex;
+				justify-content: space-between;
 				font-size: 1.2em;
 				font-family: sourceHan-Medium;
+				position: static;
+				.time {
+					color: #787670;
+					font-family: sourceHan-Regular;
+					flex-shrink: 0;
+				}
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			a:after {
+				display: none;
 			}
 		}
 	}
