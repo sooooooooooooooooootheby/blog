@@ -27,6 +27,17 @@
 			<br />
 			<p>Please excuse my poor English.</p>
 		</div>
+		<div class="link">
+			<ul>
+				<li>
+					<a href="https://github.com/sooooooooooooooooootheby">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#icon-github2"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 </template>
 
