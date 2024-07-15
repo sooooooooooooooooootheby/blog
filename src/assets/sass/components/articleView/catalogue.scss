@@ -51,9 +51,27 @@
 			width: 20rem;
 			height: 20rem;
 		}
+		.mainTitle {
+			width: 100%;
+			span {
+				font-size: 2rem;
+				font-family: sourceHan-Medium;
+				font-weight: bold;
+			}
+		}
 		ul {
 			li {
-				width: 20rem;
+				width: 100%;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				// justify-content: center;
+				.title {
+					font-size: 1rem;
+				}
+				.time {
+					font-size: 0.8rem;
+				}
 			}
 		}
 	}
