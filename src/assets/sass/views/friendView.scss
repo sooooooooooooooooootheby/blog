@@ -1,0 +1,117 @@
+.friend {
+	padding: 200px 400px;
+	display: flex;
+	flex-direction: column;
+
+	.title {
+		color: #000000;
+		font-size: 3rem;
+		font-family: sourceHan-Medium;
+		font-weight: bold;
+	}
+	.subTitle {
+		color: #3c3c43c7;
+		font-size: 2rem;
+		font-family: sourceHan-Medium;
+	}
+	ul {
+        width: 100%;
+        height: auto;
+		margin-top: 64px;
+		display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+		li {
+			list-style: none;
+			width: 400px;
+			height: auto;
+            margin: 32px;
+			padding-bottom: 32px;
+			background-color: #ffffff;
+			border-radius: 24px;
+			box-shadow: 0 0 10px 1px #3c3c43c7;
+			overflow: hidden;
+			position: relative;
+            flex-shrink: 0;
+
+			.background {
+				width: 100%;
+				height: 100px;
+				overflow: hidden;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				filter: blur(10px);
+				img {
+					width: 100%;
+				}
+			}
+			.avatar {
+				width: 128px;
+				height: 128px;
+				overflow: hidden;
+				border-radius: 999px;
+				position: absolute;
+				left: calc(50% - (128px / 2));
+				top: 50px;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.text {
+				margin-top: 128px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				.name {
+					font-size: 1.5rem;
+					font-family: sourceHan-Medium;
+				}
+				.username {
+					font-size: 1rem;
+					font-family: sourceHan-Medium;
+					color: #3c3c43c7;
+				}
+				.bio {
+					margin: 12px 0;
+					font-size: 1.1rem;
+					font-family: sourceHan-Regular;
+				}
+			}
+			.a {
+				margin-top: 32px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				a {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+                    flex-grow: 1;
+
+					svg {
+						margin: 12px 0;
+						color: #3c3c43c7;
+						font-size: 1.6rem;
+					}
+					span {
+						color: #3c3c43c7;
+						font-size: 1rem;
+						font-family: sourceHan-Regular;
+					}
+				}
+                .division {
+                    width: 2px;
+                    height: 48px;
+                    background-color: #3c3c436b;
+                    border-radius: 2px;
+                }
+			}
+		}
+	}
+}

@@ -3,6 +3,7 @@
 		<div class="menu" ref="menu">
 			<router-link to="/" >Home</router-link>
 			<!-- <router-link to="/article" >Article</router-link> -->
+			<router-link to="/friend">Friend</router-link>
 		</div>
 		<input id="burger-checkbox" type="checkbox" v-model="isMenu" @input="cutMenu" />
 		<label class="burger" for="burger-checkbox">
