@@ -64,6 +64,9 @@ a:after {
 }
 
 @media screen and (max-width: 450px) {
+	* {
+		font-size: 14px;
+	}
 	body {
 		background-size: 25px 25px;
 	}
