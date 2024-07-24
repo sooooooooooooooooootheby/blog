@@ -19,8 +19,9 @@
 					<div class="bar11"></div>
 					<div class="bar12"></div>
 				</div>
-				<p>查询中, 由于是Github的API,查询会比较慢。</p>
-				<p>如果查询失败请魔法上网或者刷新页面。</p>
+				<p>查询中...</p>
+				<p>由于是Github的API,查询会比较慢。</p>
+				<p>如果查询失败请魔法上网/刷新页面。</p>
 			</li>
 			<li v-for="(item, index) in friendData" :key="index" v-else>
 				<div class="background">
@@ -64,7 +65,7 @@ export default {
 		return {
 			friendList: ["sooooooooooooooooootheby", "lassksy", "himicoswilson"],
 			friendData: [],
-			isFriendList: true,
+			isFriendList: false,
 			isFriend: true,
 		};
 	},

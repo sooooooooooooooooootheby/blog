@@ -32,6 +32,9 @@ importers:
       sass:
         specifier: ^1.77.6
         version: 1.77.6
+      swapy:
+        specifier: ^0.0.6
+        version: 0.0.6
       vue:
         specifier: ^3.4.29
         version: 3.4.31
@@ -526,6 +529,9 @@ packages:
     resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
     engines: {node: '>=0.10.0'}
 
+  swapy@0.0.6:
+    resolution: {integrity: sha512-c53c1vza/FkB1Zk/nzoomiDs7zE4VHjPSlbSpUSeCgnqT5swgHl3t1cNJ+zxAwqa2z80FIQ3LftMNCNPsWZh3Q==}
+
   to-fast-properties@2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
@@ -989,6 +995,8 @@ snapshots:
       source-map-js: 1.2.0
 
   source-map-js@1.2.0: {}
+
+  swapy@0.0.6: {}
 
   to-fast-properties@2.0.0: {}
 

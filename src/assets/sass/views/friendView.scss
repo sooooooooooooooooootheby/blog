@@ -24,11 +24,13 @@
 		align-items: center;
 
 		.loading {
+			margin: 0;
+			padding: 0;
 			box-shadow: none;
 			background-color: transparent;
 			border-radius: 0;
 
-			width: 100%;
+			width: 80%;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -244,6 +246,7 @@
 			font-size: 2rem;
 			font-family: sourceHan-Regular;
 			span {
+				font-size: 2rem;
 				margin-right: 12px;
 			}
 		}
@@ -255,8 +258,22 @@
 		padding: 80px 40px;
 
 		ul {
+			.loading {
+				p {
+					font-size: 1.2rem;
+				}
+			}
 			li {
 				width: 100%;
+			}
+		}
+		.error {
+			p {
+				text-wrap: nowrap;
+				font-size: 1.2rem;
+				span {
+					font-size: 1.2rem;
+				}
 			}
 		}
 	}
