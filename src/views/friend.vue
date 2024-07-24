@@ -2,7 +2,8 @@
 	<div class="friend">
 		<span class="title">Friend</span>
 		<span class="subTitle">These are my friends</span>
-		<ul>
+		
+		<ul v-if="isFriendList">
 			<li v-for="(item, index) in friendData" :key="index">
 				<div class="background">
 					<img :src="item.avatar_url" alt="background" />
@@ -13,7 +14,6 @@
 				<div class="text">
 					<span class="name">{{ item.name }}</span>
 					<span class="username">@{{ item.login }}</span>
-					<!-- <span class="bio">{{ item.bio }}</span> -->
 				</div>
 				<div class="a">
 					<a class="github" :href="item.html_url">
@@ -32,6 +32,9 @@
 				</div>
 			</li>
 		</ul>
+		<div class="error" v-else>
+			<p><span>(✘Д✘๑ )</span>Github查询失败,请刷新...</p>
+		</div>
 	</div>
 </template>
 
@@ -43,9 +46,13 @@ export default {
 		return {
 			friendList: ["sooooooooooooooooootheby", "lassksy", "himicoswilson"],
 			friendData: [],
+			isFriendList: true
 		};
 	},
 	methods: {
+		showErrer() {
+			this.isFriendList = !this.isFriendList
+		},
 		async getFriendInfo() {
 			const promises = this.friendList.map(async (user) => {
 				try {
@@ -53,11 +60,11 @@ export default {
 					this.friendData.push(res.data);
 				} catch (error) {
 					console.error(error);
+					this.showErrer();
 				}
 			});
 
 			await Promise.all(promises);
-			console.log(this.friendData);
 		},
 	},
 	mounted() {
