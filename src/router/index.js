@@ -18,7 +18,7 @@ const router = createRouter({
 					},
 				},
 				{
-					path: ":name",
+					path: ":id",
 					props: true,
 					components: {
 						default: () => import("@/components/articleView/content.vue"),

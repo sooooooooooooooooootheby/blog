@@ -4,8 +4,8 @@
 			<span>Article</span>
 		</div>
 		<ul>
-			<li v-for="item in catalogue" :key="item">
-				<router-link :to="'/article/' + item.title">
+			<li v-for="(item, index) in catalogue.articleList" :key="index">
+				<router-link :to="'/article/' + item.id">
 					<span class="title">{{ item.title }}</span>
 					<span class="time">{{ time(item.time) }}</span>
 				</router-link>
@@ -28,10 +28,10 @@ export default {
 		};
 	},
 	methods: {
-		// 加载文件列表
-		async loadFileList() {
+		// 加载文章列表
+		async loadArticleList() {
 			try {
-				await this.handleArticle.getFileList();
+				await this.handleArticle.getArticleList();
 				this.catalogue = this.handleArticle.fileList;
 			} catch (error) {
 				console.error(error);
@@ -101,7 +101,7 @@ export default {
 		},
 	},
 	created() {
-		this.loadFileList();
+		this.loadArticleList();
 	},
 	watch: {
 		"handleArticle.articleData"(newValue, oldValue) {

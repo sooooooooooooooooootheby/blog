@@ -13,19 +13,22 @@ export const articleStore = defineStore({
 	},
 	actions: {
 		// 获取文章列表
-		async getFileList() {
+		async getArticleList() {
 			try {
-				const res = await axios.get(`/articleList.json`);
+				const res = await axios.get(`/article/getArticleList`);
 				this.fileList = res.data;
 			} catch (error) {
 				console.error(error);
 			}
 		},
 		// 获取文章
-		async getArticle({ filename }) {
+		async getArticle({ id }) {
 			try {
-				const res = await axios.get(`/article/${filename}.md`);
-				// 将文件的完整数据填充到articleData
+				const res = await axios.get(`/article/getArticle`, {
+					params: {
+						id,
+					},
+				});
 				this.articleData = res.data;
 			} catch (error) {
 				console.error(error);

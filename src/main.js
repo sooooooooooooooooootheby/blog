@@ -6,6 +6,9 @@ import { createApp } from 'vue'
 import { createPinia } from "pinia";
 import App from './App.vue'
 import router from './router'
+import axios from "axios";
+
+axios.defaults.baseURL = "http://192.168.31.111:3578";
 
 const app = createApp(App)
 
