@@ -8,7 +8,7 @@
 				{{ item }}
 			</span>
 		</div>
-		<!-- <div v-html="compiledMarkdown"></div> -->
+		<div v-html="compiledMarkdown"></div>
 	</div>
 </template>
 
