@@ -1,18 +1,23 @@
 .friend {
-	padding: 200px 400px;
+	padding-top: 200px;
 	display: flex;
 	flex-direction: column;
 
 	.title {
-		color: #000000;
-		font-size: 3rem;
-		font-family: sourceHan-Medium;
-		font-weight: bold;
-	}
-	.subTitle {
-		color: #3c3c43c7;
-		font-size: 2rem;
-		font-family: sourceHan-Medium;
+		padding: 0 400px;
+		display: flex;
+		flex-direction: column;
+		.mainTitle {
+			color: #000000;
+			font-size: 3rem;
+			font-family: sourceHan-Medium;
+			font-weight: bold;
+		}
+		.subTitle {
+			color: #3c3c43c7;
+			font-size: 2rem;
+			font-family: sourceHan-Medium;
+		}
 	}
 	.loading {
 		margin: 0;
@@ -130,7 +135,7 @@
 	}
 
 	.container {
-		width: 100%;
+		width: 100vw;
 		height: auto;
 		margin-top: 64px;
 		display: flex;

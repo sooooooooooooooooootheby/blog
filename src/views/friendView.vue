@@ -1,7 +1,9 @@
 <template>
 	<div class="friend">
-		<span class="title">Friend</span>
-		<span class="subTitle">These are my friends</span>
+		<div class="title">
+			<span class="mainTitle">Friend</span>
+			<span class="subTitle">These are my friends</span>
+		</div>
 
 		<div v-if="isFriendList" class="loading">
 			<div class="loader">

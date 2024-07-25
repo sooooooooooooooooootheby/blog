@@ -28,7 +28,7 @@ const router = createRouter({
 		},
 		{
 			path: "/friend",
-			component: () => import("@/views/friend.vue"),
+			component: () => import("@/views/friendView.vue"),
 		},
 		{
 			name: "404",
