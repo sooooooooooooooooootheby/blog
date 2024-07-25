@@ -7,7 +7,7 @@ const router = createRouter({
 			path: "/",
 			component: () => import("@/views/homeView.vue"),
 		},
-        {
+		{
 			path: "/article",
 			component: () => import("@/views/articleView.vue"),
 			children: [
@@ -28,8 +28,17 @@ const router = createRouter({
 		},
 		{
 			path: "/friend",
-			component: () => import("@/views/friend.vue")
-		}
+			component: () => import("@/views/friend.vue"),
+		},
+		{
+			name: "404",
+			path: "/404",
+			component: () => import("@/views/notFound.vue"),
+		},
+		{
+            path: "/:catchAll(.*)",
+            redirect: "/404",
+        },
 	],
 });
 
